@@ -7,37 +7,41 @@
     <link rel="stylesheet" href="./calc.css" />
   </head>
   <body>
-    <div class="calculator">
-      <div class="display">
-        <input type="text" class="output" disabled />
-      </div>
-      <div class="buttons">
-        <button  class="item" id="display0">7</button>
-        <button class="item" id="display1">8</button>
-        <button class="item" id="display2">9</button>
-        <button class="item" id="display3">/</button>
-        <button class="item" id="display4">4</button>
-        <button class="item" id="display5">5</button>
-        <button class="item" id="display6">6</button>
-        <button class="item" id="display7">*</button>
-        <button class="item" id="display8">1</button>
-        <button class="item" id="display9">2</button>
-        <button class="item" id="display10">3</button>
-        <button class="item" id="display11">-</button>
-        <button class="item" id="display12">0</button>
-        <button class="item" id="display13">.</button>
-        <button class="item" id="display14">=</button>
-        <button class="item" id="display15">+</button>
-        <button class="item" id="display16">C</button>
-        <button class="item" id="display16">Cos</button>
-        <button class="item" id="display16">log</button>
-        <button class="item" id="display16">tan</button>
-        <button class="item" id="display16">sin</button>
+    <di id="calculator">
+     
+        <input type="text" id="display"  />
+    
+      <div id="keys">
+        <button class="item" onclick="appendToDisplay('7')">7</button>
+        <button class="item" onclick="appendToDisplay('8')">8</button>
+        <button class="item" onclick="appendToDisplay('9')">9</button>
+        <button class="item" onclick="appendToDisplay('/')">/</button>
+        <button class="item" onclick="appendToDisplay('4')">4</button>
+        <button class="item" onclick="appendToDisplay('5')">5</button>
+        <button class="item" onclick="appendToDisplay('6')">6</button>
+        <button class="item" onclick="appendToDisplay('*')">*</button>
+        <button class="item" onclick="appendToDisplay('1')">1</button>
+        <button class="item" onclick="appendToDisplay('2')">2</button>
+        <button class="item" onclick="appendToDisplay('3')">3</button>
+        <button class="item" onclick="appendToDisplay('-')">-</button>
+        <button class="item" onclick="appendToDisplay('0')">0</button>
+        <button class="item" onclick="appendToDisplay('.')">.</button>
+        <button class="item" onclick="calculate()">=</button>
+        <button class="item" onclick="appendToDisplay('+')">+</button>
+        <button class="item" onclick="ClearDisplay()">C</button>
+        <button class="item"  onclick="appendToDisplay('math.sin()')">sin</button>
+        <button class="item" onclick="appendToDisplay('math.cos(')">cos</button>
+        <button class="item" onclick="appendToDisplay('math.tan(x')">tan</button>
+        <button class="item" onclick="appendToDisplay('math.log(x)')">log</button>
+        
       </div>
     </div>
       </div>
     
 
     <script src="./master.js"></script>
+
+
+
   </body>
 </html>

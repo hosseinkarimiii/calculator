@@ -1,4 +1,17 @@
 "use strict";
-///
-const buttons = document.querySelectorAll("button");
-const display = document.querySelector("input");
+const display = document.getElementById("display");
+
+function appendToDisplay(input) {
+  display.value += input;
+}
+
+function ClearDisplay() {
+  display.value = "";
+}
+function calculate() {
+  try {
+    display.value = eval(display.value);
+  } catch (error) {
+    display.value = "Error";
+  }
+}

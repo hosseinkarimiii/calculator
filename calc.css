@@ -11,7 +11,7 @@ body {
   background-color: #cc7d7d;
   flex-wrap: wrap;
 }
-.calculator {
+#calculator {
   width: 80vw;
   height: 80vh;
   background-color: #efacac;
@@ -24,7 +24,7 @@ body {
   grid-template-columns: 1fr;
 }
 
-.buttons {
+#keys {
   display: grid;
   grid-template-columns: repeat(4, 45px);
   grid-template-rows: repeat(8, 45px);
@@ -32,11 +32,10 @@ body {
   place-content: center;
 }
 
-.display {
+#display {
+  width: 230px;
   display: flex;
-  justify-content: center;
-}
-.output {
+  margin: auto;
   padding: 23px;
   background-color: #b6e232;
   border-radius: 20px;
